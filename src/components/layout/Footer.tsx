@@ -23,28 +23,36 @@ export function Footer() {
             </p>
             <div className="flex space-x-5">
               <a
-                href="#"
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-tech-gray-400 transition-colors hover:text-tech-blue-600"
                 aria-label="Facebook"
               >
                 <Facebook className="h-5 w-5" />
               </a>
               <a
-                href="#"
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-tech-gray-400 transition-colors hover:text-tech-blue-600"
                 aria-label="Twitter"
               >
                 <Twitter className="h-5 w-5" />
               </a>
               <a
-                href="#"
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-tech-gray-400 transition-colors hover:text-tech-blue-600"
                 aria-label="Instagram"
               >
                 <Instagram className="h-5 w-5" />
               </a>
               <a
-                href="#"
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-tech-gray-400 transition-colors hover:text-tech-blue-600"
                 aria-label="LinkedIn"
               >
@@ -149,11 +157,21 @@ export function Footer() {
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 flex-shrink-0 text-tech-blue-600" />
-                <span className="text-tech-gray-600">+1 (555) 123-4567</span>
+                <a 
+                  href="tel:+15551234567" 
+                  className="text-tech-gray-600 hover:text-tech-blue-600"
+                >
+                  +1 (555) 123-4567
+                </a>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 flex-shrink-0 text-tech-blue-600" />
-                <span className="text-tech-gray-600">info@collabcraze.tech</span>
+                <a 
+                  href="mailto:info@collabcraze.tech" 
+                  className="text-tech-gray-600 hover:text-tech-blue-600"
+                >
+                  info@collabcraze.tech
+                </a>
               </li>
             </ul>
           </div>
