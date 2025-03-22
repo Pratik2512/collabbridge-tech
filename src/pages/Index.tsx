@@ -1,14 +1,23 @@
-// Update this page (the content is just a fallback if you fail to update the page)
 
-const Index = () => {
+import { HeroSection } from "@/components/home/HeroSection";
+import { ServicesSection } from "@/components/home/ServicesSection";
+import { TestimonialsSection } from "@/components/home/TestimonialsSection";
+import { CtaSection } from "@/components/home/CtaSection";
+import { Helmet } from "react-helmet";
+
+const HomePage = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <>
+      <Helmet>
+        <title>CollabCraze Tech - Bridging Business & Tech for a Smarter Future</title>
+        <meta name="description" content="CollabCraze Tech provides sustainable tech solutions, including website and app development, to help businesses grow and thrive in the digital age." />
+      </Helmet>
+      <HeroSection />
+      <ServicesSection />
+      <TestimonialsSection />
+      <CtaSection />
+    </>
   );
 };
 
-export default Index;
+export default HomePage;
