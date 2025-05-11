@@ -4,21 +4,21 @@ import { cn } from "@/lib/utils";
 
 const milestones = [
   {
-    year: "2020",
+    year: "2024",
     title: "Founded",
     description: "CollabCraze Tech was founded with a mission to bridge the gap between businesses and technology.",
     icon: Clock,
     color: "bg-blue-100 text-blue-600",
   },
   {
-    year: "2021",
+    year: "2024",
     title: "First Major Clients",
     description: "Secured our first major clients and expanded our development team to meet growing demand.",
     icon: Users,
     color: "bg-green-100 text-green-600",
   },
   {
-    year: "2022",
+    year: "2025",
     title: "Service Expansion",
     description: "Expanded our service offerings to include mobile app development and cloud solutions.",
     icon: Lightbulb,

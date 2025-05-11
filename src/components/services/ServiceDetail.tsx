@@ -1,5 +1,4 @@
-
-import { ArrowRight, Code, Smartphone, Lightbulb, Cloud, Brain, Cog } from "lucide-react";
+import { ArrowRight, Code, Smartphone, Lightbulb, Cloud, Brain, Cog, Share2 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -20,6 +19,22 @@ const services = [
       "Performance optimization",
     ],
     image: "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+  },
+  {
+    id: "social-media-marketing",
+    title: "Social Media Marketing",
+    description: "Social media marketing services to help you reach your target audience and grow your business.",
+    icon: Share2,
+    color: "bg-pink-100 text-pink-600",
+    features: [
+      "Social media strategy development",
+      "Content creation and curation",
+      "Community management",
+      "Paid social media advertising",
+      "Social media analytics and reporting",
+      "Influencer marketing campaigns",
+    ],
+    image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
   },
   {
     id: "app-development",
@@ -69,38 +84,38 @@ const services = [
     ],
     image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80",
   },
-  {
-    id: "ai-ml",
-    title: "AI & Machine Learning",
-    description: "Cutting-edge AI solutions to help your business automate processes and gain insights from data.",
-    icon: Brain,
-    color: "bg-indigo-100 text-indigo-600",
-    features: [
-      "Machine learning model development",
-      "Natural language processing",
-      "Computer vision solutions",
-      "Predictive analytics",
-      "AI integration with existing systems",
-      "Data analytics dashboards",
-    ],
-    image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-  },
-  {
-    id: "automation",
-    title: "Automation",
-    description: "Streamline your business processes with custom automation solutions that save time and reduce errors.",
-    icon: Cog,
-    color: "bg-green-100 text-green-600",
-    features: [
-      "Business process automation",
-      "Workflow optimization",
-      "RPA (Robotic Process Automation)",
-      "Custom automation scripts",
-      "Integration of existing systems",
-      "Automated testing solutions",
-    ],
-    image: "https://images.unsplash.com/photo-1563770660941-10a2b3654e41?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-  },
+  // {
+  //   id: "ai-ml",
+  //   title: "AI & Machine Learning",
+  //   description: "Cutting-edge AI solutions to help your business automate processes and gain insights from data.",
+  //   icon: Brain,
+  //   color: "bg-indigo-100 text-indigo-600",
+  //   features: [
+  //     "Machine learning model development",
+  //     "Natural language processing",
+  //     "Computer vision solutions",
+  //     "Predictive analytics",
+  //     "AI integration with existing systems",
+  //     "Data analytics dashboards",
+  //   ],
+  //   image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+  // },
+  // {
+  //   id: "automation",
+  //   title: "Automation",
+  //   description: "Streamline your business processes with custom automation solutions that save time and reduce errors.",
+  //   icon: Cog,
+  //   color: "bg-green-100 text-green-600",
+  //   features: [
+  //     "Business process automation",
+  //     "Workflow optimization",
+  //     "RPA (Robotic Process Automation)",
+  //     "Custom automation scripts",
+  //     "Integration of existing systems",
+  //     "Automated testing solutions",
+  //   ],
+  //   image: "https://images.unsplash.com/photo-1563770660941-10a2b3654e41?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+  // },
 ];
 
 export function ServiceDetail() {
@@ -126,9 +141,16 @@ export function ServiceDetail() {
                 <div className={cn("mb-4 inline-flex rounded-full p-3", service.color)}>
                   <service.icon className="h-6 w-6" />
                 </div>
-                <h2 className="text-3xl font-bold tracking-tight text-tech-gray-900 sm:text-4xl">
-                  {service.title}
-                </h2>
+                <div className="flex items-center gap-3">
+                  <h2 className="text-3xl font-bold tracking-tight text-tech-gray-900 sm:text-4xl">
+                    {service.title}
+                  </h2>
+                  {service.id === "cloud-solutions" && (
+                    <span className="inline-flex items-center rounded-full bg-yellow-100 px-3 py-1 text-sm font-medium text-yellow-800">
+                      Upcoming
+                    </span>
+                  )}
+                </div>
                 <p className="mt-4 text-lg text-tech-gray-600">
                   {service.description}
                 </p>

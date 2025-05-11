@@ -8,14 +8,14 @@ export function MapSection() {
             Find Us
           </h2>
           <p className="mt-4 text-lg text-tech-gray-600">
-            Visit our office in the heart of the Innovation District.
+            Visit our office in the vicinity of Dr. D.Y. Patil Campus, Pimpri.
           </p>
         </div>
 
         <div className="mt-12 overflow-hidden rounded-2xl shadow-lg">
           <iframe
             title="CollabCraze Tech Office Location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50470.76569838493!2d-122.4481705418945!3d37.75781799999991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sca!4v1654728414294!5m2!1sen!2sca"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.0301426767597!2d73.8151016!3d18.6211477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa1975e4ed689354f%3A0xb7a2539b81a5a3d6!2sCollabCraze%20Tech!5e0!3m2!1sen!2sin!4v1715438030000"
             width="100%"
             height="500"
             style={{ border: 0 }}

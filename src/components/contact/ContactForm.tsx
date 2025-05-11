@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -39,16 +38,47 @@ export function ContactForm() {
     },
   });
 
-  function onSubmit(data: FormValues) {
+  async function onSubmit(data: FormValues) {
     setIsSubmitting(true);
     
-    // Simulate API call
-    setTimeout(() => {
-      console.log(data);
+    const formData = new FormData();
+    formData.append("access_key", "8485e240-7ee9-4c3b-b185-f088967ce720");
+    formData.append("name", data.name);
+    formData.append("email", data.email);
+    formData.append("phone", data.phone || "");
+    formData.append("message", data.message);
+    formData.append("subject", `${data.name} sent you a message`);
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: json
+      }).then((res) => res.json());
+
+      if (res.success) {
+        toast.success("Message sent successfully!", {
+          description: "Thank you for reaching out. We will get back to you soon.",
+        });
+        form.reset();
+      } else {
+        toast.error("Failed to send message", {
+          description: "Please try again or contact us directly via email.",
+        });
+      }
+    } catch (error) {
+      toast.error("An error occurred", {
+        description: "Please try again later or contact us directly via email.",
+      });
+    } finally {
       setIsSubmitting(false);
-      form.reset();
-      toast.success("Thank you for your message! We'll get back to you soon.");
-    }, 1500);
+    }
   }
 
   return (
@@ -158,7 +188,8 @@ export function ContactForm() {
                   <div>
                     <h3 className="font-semibold">Office Location</h3>
                     <p className="mt-1 text-tech-gray-300">
-                      123 Tech Avenue, Innovation District,<br />San Francisco, CA 94103
+                      Opp. Jogeshwari Misal, Sant Tukaram,<br/>
+                      Pimpri, Pune 411018
                     </p>
                   </div>
                 </div>
@@ -167,8 +198,8 @@ export function ContactForm() {
                   <Mail className="h-6 w-6 flex-shrink-0 text-tech-blue-400" />
                   <div>
                     <h3 className="font-semibold">Email</h3>
-                    <p className="mt-1 text-tech-gray-300">info@collabcraze.tech</p>
-                    <p className="text-tech-gray-300">support@collabcraze.tech</p>
+                    <p className="mt-1 text-tech-gray-300">collabcraze.tech@gmail.com</p>
+                    <p className="text-tech-gray-300">help.collabcraze@gmail.com</p>
                   </div>
                 </div>
 
@@ -176,13 +207,13 @@ export function ContactForm() {
                   <Phone className="h-6 w-6 flex-shrink-0 text-tech-blue-400" />
                   <div>
                     <h3 className="font-semibold">Phone</h3>
-                    <p className="mt-1 text-tech-gray-300">+1 (555) 123-4567</p>
-                    <p className="text-tech-gray-300">+1 (555) 987-6543</p>
+                    <p className="mt-1 text-tech-gray-300">+91-7066908355</p>
+                    <p className="text-tech-gray-300">+91-9022246734</p>
                   </div>
                 </div>
               </div>
 
-              <div className="mt-12">
+              {/* <div className="mt-12">
                 <h3 className="font-semibold">Business Hours</h3>
                 <div className="mt-2 space-y-2">
                   <div className="flex justify-between">
@@ -198,7 +229,7 @@ export function ContactForm() {
                     <span>Closed</span>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

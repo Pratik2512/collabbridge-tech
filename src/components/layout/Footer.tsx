@@ -41,7 +41,7 @@ export function Footer() {
                 <Twitter className="h-5 w-5" />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/collabcraze.tech/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-tech-gray-400 transition-colors hover:text-tech-blue-600"
@@ -152,25 +152,26 @@ export function Footer() {
               <li className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 flex-shrink-0 text-tech-blue-600" />
                 <span className="text-tech-gray-600">
-                  123 Tech Avenue, Innovation District, CA 94103
+                  Opp. Jogeshwari Misal, Sant Tukaram, Pimpri, Pune 411018
                 </span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 flex-shrink-0 text-tech-blue-600" />
                 <a 
-                  href="tel:+15551234567" 
+                  href="tel:+91-7066908355" 
                   className="text-tech-gray-600 hover:text-tech-blue-600"
                 >
-                  +1 (555) 123-4567
+                  +91-7066908355
+                  
                 </a>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 flex-shrink-0 text-tech-blue-600" />
                 <a 
-                  href="mailto:info@collabcraze.tech" 
+                  href="mailto:collabcraze.tech@gmail.com" 
                   className="text-tech-gray-600 hover:text-tech-blue-600"
                 >
-                  info@collabcraze.tech
+                  collabcraze.tech@gmail.com
                 </a>
               </li>
             </ul>
