@@ -3,42 +3,45 @@ import { Linkedin, Twitter } from "lucide-react";
 
 const team = [
   {
-    name: "Alex Chen",
-    role: "Founder & CEO",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
-    bio: "Alex has over 15 years of experience in the tech industry and founded CollabCraze Tech with a vision to make technology accessible to businesses of all sizes.",
+    name: "Swapnil Belote",
+    // role: "Founder & CEO",
+    image: "https://i.postimg.cc/B6LGJJf6/Whats-App-Image-2024-02-14-at-10-54-05-AM-11zon.jpg",
+    // remove "https://postimg.cc/delete/Sw8pRJCf/2e6c9cdc"
+    bio: "Swapnil has a vast experience in business and technology and founded CollabCraze Tech with a vision to make technology accessible to businesses of all sizes.",
     social: {
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/swapnil-belote-79b878259/",
       twitter: "#",
     },
   },
   {
-    name: "Sarah Mitchell",
-    role: "CTO",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
-    bio: "Sarah leads our technical team, bringing her expertise in web development, cloud architecture, and emerging technologies to deliver cutting-edge solutions.",
+    name: "Pratik Mohite",
+    // role: "CTO",
+    image: "https://i.postimg.cc/7ZnHRPqr/pratik-Up-Profile-1-removebg-preview.png",
+    // remove : "https://postimg.cc/delete/0Fc51M06/e236a90b"
+    bio: "Pratik leads our technical team, bringing his expertise in web development, cloud architecture, and emerging technologies to deliver cutting-edge solutions.",
     social: {
-      linkedin: "#",
-      twitter: "#",
+      linkedin: "https://www.linkedin.com/in/pratikmohite2512/",
+      twitter: "https://x.com/0xPratik010",
     },
   },
   {
-    name: "Michael Rodriguez",
-    role: "Head of Design",
+    name: "Vishal Mukta",
+    // role: "Head of Design",
     image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
-    bio: "Michael ensures that all our digital products are not only functional but also deliver exceptional user experiences with intuitive and elegant designs.",
+    bio: "Vishal ensures that all our digital products are not only functional but also bug free and deliver user experiences with intuitive and elegant designs.",
     social: {
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/vishal-mukta-591192204/",
       twitter: "#",
     },
   },
   {
-    name: "Emma Johnson",
-    role: "Client Success Manager",
-    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
-    bio: "Emma works closely with our clients to understand their needs and ensure that our solutions exceed their expectations and drive tangible business results.",
+    name: "Yash Gangurde",
+    // role: "Client Success Manager",
+    image: "https://i.postimg.cc/FsthskRQ/photo-Photoroom.jpg",
+    // remove: "https://postimg.cc/delete/bMPqGH6D/65172d92"
+    bio: "Yash works closely with our clients to understand their needs and ensure that our solutions exceed their expectations and drive tangible business results.",
     social: {
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/yash-gangurde-ab4b78264/",
       twitter: "#",
     },
   },
@@ -64,13 +67,13 @@ export function TeamSection() {
               className="card-hover frost-bg overflow-hidden rounded-xl border border-white/50 p-6 shadow-sm backdrop-blur-sm"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="aspect-square overflow-hidden rounded-xl">
+              {/* <div className="aspect-square overflow-hidden rounded-xl">
                 <img
                   src={member.image}
                   alt={member.name}
                   className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
                 />
-              </div>
+              </div> */}
               <h3 className="mt-4 text-xl font-semibold text-tech-gray-900">
                 {member.name}
               </h3>

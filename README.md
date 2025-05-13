@@ -1,69 +1,99 @@
-# Welcome to your Lovable project
+# CollabCraze Tech - Digital Transformation Partner
 
-## Project info
+CollabCraze Tech is a modern web application showcasing our digital transformation services, built with React and TypeScript.
 
-**URL**: https://lovable.dev/projects/42233a98-2a9f-4e60-bca4-62d3cd416afe
+## 🚀 Features
 
-## How can I edit this code?
+- **Modern UI/UX**: Built with React and styled using Tailwind CSS
+- **Responsive Design**: Fully responsive layout that works on all devices
+- **Interactive Components**: Engaging user interface with smooth animations
+- **Contact Form**: Integrated with Web3Forms for reliable form submissions
+- **Service Showcase**: Detailed presentation of our service offerings
+- **Testimonials**: Dynamic testimonial carousel with client feedback
 
-There are several ways of editing your application.
+## 🛠️ Technologies Used
 
-**Use Lovable**
+- **Frontend Framework**: React with TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui
+- **Form Handling**: React Hook Form with Zod validation
+- **Icons**: Lucide Icons
+- **Form Submission**: Web3Forms API
+- **Animations**: CSS transitions and transforms
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/42233a98-2a9f-4e60-bca4-62d3cd416afe) and start prompting.
+## 📦 Installation
 
-Changes made via Lovable will be committed automatically to this repo.
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/collabbridge-tech.git
+cd collabbridge-tech
+```
 
-**Use your preferred IDE**
+2. Install dependencies:
+```bash
+npm install
+```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. Start the development server:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+4. Build for production:
+```bash
+npm run build
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🏗️ Project Structure
 
-**Use GitHub Codespaces**
+```
+src/
+├── components/         # React components
+│   ├── contact/       # Contact form components
+│   ├── home/          # Home page components
+│   └── services/      # Service-related components
+├── lib/               # Utility functions and configurations
+└── main.tsx          # Application entry point
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🔧 Configuration
 
-## What technologies are used for this project?
+### Environment Variables
 
-This project is built with .
+Create a `.env` file in the root directory with the following variables:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```env
+VITE_WEB3FORMS_KEY=your_web3forms_key
+```
 
-## How can I deploy this project?
+## 🚀 Deployment
 
-Simply open [Lovable](https://lovable.dev/projects/42233a98-2a9f-4e60-bca4-62d3cd416afe) and click on Share -> Publish.
+The application can be deployed to any static hosting service like Netlify, Vercel, or GitHub Pages.
 
-## I want to use a custom domain - is that possible?
+### Netlify Deployment
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+1. Push your code to GitHub
+2. Connect your repository to Netlify
+3. Configure build settings:
+   - Build command: `npm run build`
+   - Publish directory: `dist`
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👥 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📞 Contact
+
+For any queries or support, please reach out to us at:
+- Email: collabcraze.tech@gmail.com
+- Phone: +91-7066908355
+- Address: Opp. Jogeshwari Misal, Sant Tukaram, Pimpri, Pune 411018

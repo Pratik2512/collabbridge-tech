@@ -25,7 +25,7 @@ const milestones = [
     color: "bg-amber-100 text-amber-600",
   },
   {
-    year: "2023",
+    year: "2025",
     title: "Industry Recognition",
     description: "Received industry recognition for our innovative solutions and client-focused approach.",
     icon: Award,
