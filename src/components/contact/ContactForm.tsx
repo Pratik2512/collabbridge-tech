@@ -41,8 +41,19 @@ export function ContactForm() {
   async function onSubmit(data: FormValues) {
     setIsSubmitting(true);
     
+    // Get API key from environment variable
+    const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+    
+    if (!accessKey) {
+      toast.error("Configuration Error", {
+        description: "Contact form is not properly configured. Please contact the administrator.",
+      });
+      setIsSubmitting(false);
+      return;
+    }
+    
     const formData = new FormData();
-    formData.append("access_key", "8485e240-7ee9-4c3b-b185-f088967ce720");
+    formData.append("access_key", accessKey);
     formData.append("name", data.name);
     formData.append("email", data.email);
     formData.append("phone", data.phone || "");

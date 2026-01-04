@@ -69,31 +69,31 @@ export default {
 				},
 				// Custom colors
 				"tech-blue": {
-          DEFAULT: "#2563EB",
-          50: "#EFF6FF",
-          100: "#DBEAFE",
-          200: "#BFDBFE",
-          300: "#93C5FD",
-          400: "#60A5FA",
-          500: "#3B82F6",
-          600: "#2563EB",
-          700: "#1D4ED8",
-          800: "#1E40AF",
-          900: "#1E3A8A"
-        },
-        "tech-gray": {
-          DEFAULT: "#374151",
-          50: "#F9FAFB",
-          100: "#F3F4F6",
-          200: "#E5E7EB",
-          300: "#D1D5DB",
-          400: "#9CA3AF",
-          500: "#6B7280",
-          600: "#4B5563",
-          700: "#374151",
-          800: "#1F2937",
-          900: "#111827"
-        }
+					DEFAULT: "#D91C7B",
+					50: "#FCEEF6",
+					100: "#F9DDEC",
+					200: "#F3BCD9",
+					300: "#ED9AC7",
+					400: "#E758A1",
+					500: "#E1367B",
+					600: "#D91C7B",
+					700: "#B1165F",
+					800: "#891148",
+					900: "#610C32"
+				},
+				"tech-gray": {
+					DEFAULT: "#374151",
+					50: "#F9FAFB",
+					100: "#F3F4F6",
+					200: "#E5E7EB",
+					300: "#D1D5DB",
+					400: "#9CA3AF",
+					500: "#6B7280",
+					600: "#4B5563",
+					700: "#374151",
+					800: "#1F2937",
+					900: "#111827"
+				}
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -175,11 +175,11 @@ export default {
 				'scale-in': 'scale-in 0.5s ease-out',
 			},
 			transitionDuration: {
-        '400': '400ms',
-      },
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-      }
+				'400': '400ms',
+			},
+			backgroundImage: {
+				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+			}
 		}
 	},
 	plugins: [require("tailwindcss-animate")],

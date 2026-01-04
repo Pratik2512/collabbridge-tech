@@ -21,6 +21,12 @@ const testimonials = [
     author: "Rajendra Kale",
     role: "Owner, Jayashree Hotel",
   },
+  {
+    content:
+      "CollabCraze's Billing Software helped us simplify our processes and streamline our operations. It was a game-changer for our business.",
+    author: "Madhu Thorat",
+    role: "Owner, Morya Misal",
+  },
 ];
 
 export function TestimonialsSection() {
