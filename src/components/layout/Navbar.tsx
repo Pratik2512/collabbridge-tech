@@ -44,7 +44,7 @@ export function Navbar() {
           className="flex items-center space-x-2 text-2xl font-bold text-tech-blue-700 transition-opacity duration-200 hover:opacity-80"
         >
           <img
-            src="/favicon_io/favicon-32x32.png"
+            src="/favicon-32x32.png"
             alt="CollabCraze Logo"
             className="h-8 w-8"
           />
