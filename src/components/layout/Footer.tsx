@@ -6,7 +6,7 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-gray-200 bg-white">
+    <footer className="border-t border-gray-200 bg-white dark:border-tech-gray-700 dark:bg-tech-gray-900">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-4">
           {/* Company Info */}
@@ -16,9 +16,9 @@ export function Footer() {
               className="flex items-center space-x-2 text-2xl font-bold text-tech-blue-700"
             >
               <span>CollabCraze</span>
-              <span className="text-tech-gray-900">Tech</span>
+              <span className="text-tech-gray-900 dark:text-white">Tech</span>
             </Link>
-            <p className="text-tech-gray-600">
+            <p className="text-tech-gray-600 dark:text-tech-gray-400">
               Bridging Business & Tech for a Smarter Future. We provide sustainable tech solutions to help businesses grow and thrive in the digital age.
             </p>
             <div className="flex space-x-5">
@@ -63,7 +63,7 @@ export function Footer() {
 
           {/* Quick Links */}
           <div className="md:ml-auto">
-            <h3 className="text-base font-semibold uppercase text-tech-gray-900">
+            <h3 className="text-base font-semibold uppercase text-tech-gray-900 dark:text-white">
               Quick Links
             </h3>
             <ul className="mt-4 space-y-4">
@@ -104,7 +104,7 @@ export function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="text-base font-semibold uppercase text-tech-gray-900">
+            <h3 className="text-base font-semibold uppercase text-tech-gray-900 dark:text-white">
               Services
             </h3>
             <ul className="mt-4 space-y-4">
@@ -145,7 +145,7 @@ export function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-base font-semibold uppercase text-tech-gray-900">
+            <h3 className="text-base font-semibold uppercase text-tech-gray-900 dark:text-white">
               Contact
             </h3>
             <ul className="mt-4 space-y-4">
@@ -157,18 +157,18 @@ export function Footer() {
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 flex-shrink-0 text-tech-blue-600" />
-                <a 
-                  href="tel:+91-7066908355" 
+                <a
+                  href="tel:+91-7066908355"
                   className="text-tech-gray-600 hover:text-tech-blue-600"
                 >
                   +91-7066908355
-                  
+
                 </a>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 flex-shrink-0 text-tech-blue-600" />
-                <a 
-                  href="mailto:collabcraze.tech@gmail.com" 
+                <a
+                  href="mailto:collabcraze.tech@gmail.com"
                   className="text-tech-gray-600 hover:text-tech-blue-600"
                 >
                   collabcraze.tech@gmail.com
@@ -178,7 +178,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-gray-200 pt-8">
+        <div className="mt-12 border-t border-gray-200 dark:border-tech-gray-700 pt-8">
           <p className="text-center text-sm text-tech-gray-500">
             &copy; {currentYear} CollabCraze Tech. All rights reserved.
           </p>

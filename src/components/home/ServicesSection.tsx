@@ -36,13 +36,13 @@ const services = [
 
 export function ServicesSection() {
   return (
-    <section className="bg-white py-24">
+    <section className="bg-white dark:bg-tech-gray-900 py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-tech-gray-900 sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight text-tech-gray-900 dark:text-white sm:text-4xl">
             Our Services
           </h2>
-          <p className="mt-4 text-lg text-tech-gray-600">
+          <p className="mt-4 text-lg text-tech-gray-600 dark:text-tech-gray-400">
             Comprehensive technology solutions to help your business thrive in the digital world.
           </p>
         </div>
@@ -51,18 +51,18 @@ export function ServicesSection() {
           {services.map((service, index) => (
             <div
               key={service.title}
-              className="card-hover group flex flex-col rounded-xl border border-gray-200 bg-white p-6 shadow-sm"
+              className="card-hover group flex flex-col rounded-xl border border-gray-200 dark:border-tech-gray-700 bg-white dark:bg-tech-gray-800 p-6 shadow-sm"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className={cn("mb-4 rounded-full p-3", service.color)}>
                 <service.icon className="h-6 w-6" />
               </div>
 
-              <h3 className="mb-2 text-xl font-semibold text-tech-gray-900">
+              <h3 className="mb-2 text-xl font-semibold text-tech-gray-900 dark:text-white">
                 {service.title}
               </h3>
 
-              <p className="mb-4 flex-1 text-tech-gray-600">
+              <p className="mb-4 flex-1 text-tech-gray-600 dark:text-tech-gray-300">
                 {service.description}
               </p>
 

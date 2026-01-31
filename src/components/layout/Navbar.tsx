@@ -1,9 +1,9 @@
-
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -49,7 +49,7 @@ export function Navbar() {
             className="h-8 w-8"
           />
           <span>CollabCraze</span>
-          <span className="text-tech-gray-900">Tech</span>
+          <span className="text-tech-gray-900 dark:text-white">Tech</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -59,6 +59,7 @@ export function Navbar() {
               {link.name}
             </Link>
           ))}
+          <ThemeToggle />
           <Button
             className="rounded-full bg-tech-blue-600 px-6 py-2.5 text-sm font-medium text-white shadow-sm transition-all duration-300 hover:bg-tech-blue-700 hover:shadow-md"
             asChild

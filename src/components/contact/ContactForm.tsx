@@ -40,10 +40,10 @@ export function ContactForm() {
 
   async function onSubmit(data: FormValues) {
     setIsSubmitting(true);
-    
+
     // Get API key from environment variable
     const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
-    
+
     if (!accessKey) {
       toast.error("Configuration Error", {
         description: "Contact form is not properly configured. Please contact the administrator.",
@@ -51,7 +51,7 @@ export function ContactForm() {
       setIsSubmitting(false);
       return;
     }
-    
+
     const formData = new FormData();
     formData.append("access_key", accessKey);
     formData.append("name", data.name);
@@ -93,7 +93,7 @@ export function ContactForm() {
   }
 
   return (
-    <section className="bg-white py-24">
+    <section className="bg-white dark:bg-tech-gray-900 py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <h1 className="text-4xl font-bold tracking-tight text-tech-gray-900 sm:text-5xl">
@@ -199,7 +199,7 @@ export function ContactForm() {
                   <div>
                     <h3 className="font-semibold">Office Location</h3>
                     <p className="mt-1 text-tech-gray-300">
-                      Opp. Jogeshwari Misal, Sant Tukaram,<br/>
+                      Opp. Jogeshwari Misal, Sant Tukaram,<br />
                       Pimpri, Pune 411018
                     </p>
                   </div>
